@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.7px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        document.write('<h2>TASK 14</h2>')
+        let A = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+        let user = prompt('Welcome to our Bakery! What do you want to order').toLowerCase();
+        var found = false;
+        for (let i = 0; i < A.length; i++) {
+            if (A[i] === user) {
+                found = true;
+                break;
+            }
+        };
+        if (found === true) {
+            document.write(user, ' is available at index',i ,' in our bakery');
+        } else {
+            document.write('We are sorry ',user, ' is not available in our bakery');
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.7px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        document.write('<h2>TASK 13</h2>')
+
+        let allowedChars = /^[a-zA-Z]+$/;
+
+        let userInput = prompt("Enter only alphabets (a-z, A-Z): ");
+
+        if (allowedChars.test(userInput)) {
+            alert("Valid username!");
+            document.write("Valid username!");
+        } else {
+            alert("Invalid input! Please enter only alphabets.");
+            document.write("Invalid input! Please enter only alphabets.");
+        }
+
+        document.write('<hr>')
+        
+    </script>
+</body>
+
+</html>

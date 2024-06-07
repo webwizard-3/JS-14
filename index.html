@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      font-weight: 500;
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      margin: 10px;
+      border: solid sandybrown;
+      padding: 10px;
+    }
+
+    a:hover {
+      background-color: sandybrown;
+      color: white;
+    }
+
+    div {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<!-- At the beginning of the expression (^), it matches the beginning of the string.
+At the end of the expression ($), it matches the end of the string. -->
+
+
+<div>
+  <a href="Item Finder/index.html">Item Finder</a>
+  <a href="Length/index.html">Length</a>
+  <a href="Letters/index.html">Letters</a>
+  <a href="Password/index.html">Password</a>
+  <a href="Name/index.html">Name</a>
+</div>
+
+<body>
+  <script>
+
+
+
+    document.write('<h2>TASK 3</h2>')
+    let str = 'Pakistani';
+    document.write('String: ', str, '<br>')
+    document.write('Index of "n": ', str.indexOf('n'));
+    document.write('<hr>')
+
+
+    document.write('<h2>TASK 4</h2>')
+    let str1 = 'Hello World';
+    document.write('String: ', str1, '<br>');
+    document.write('Last Index of "l": ', str1.lastIndexOf('l'));
+    document.write('<hr>')
+
+    document.write('<h2>TASK 5</h2>')
+    let str2 = 'Pakistani'
+    document.write('String: ', str2, '<br>');
+    document.write('Character at index 3: ', str2.charAt(3));
+    document.write('<hr>')
+
+
+
+    document.write('<h2>TASK 7</h2>')
+    let city = 'Hyderabad';
+    document.write('City: ', city, '<br>');
+    document.write('After Replacement: ', city.replace('Hyder', 'Islam'));
+    document.write('<hr>')
+
+    document.write('<h2>TASK 8</h2>')
+    let message = 'Ali and Sami are best friends. They play cricket and football together.';
+    document.write('Message: ', message, '<br>');
+    document.write('After Replacement: ', message.replace('and', '&'))
+    document.write('<hr>')
+
+    document.write('<h2>TASK 9</h2>')
+    let strNumber = "472";
+    let convertedNumber = parseInt(strNumber);
+    document.write('Value: ', strNumber, ' Type: ', typeof strNumber, '<br>');
+    document.write('Value: ', convertedNumber, ' Type: ', typeof convertedNumber, '<br>');
+    document.write('<hr>')
+
+
+
+    document.write('<h2>TASK 12</h2>')
+    var num = 35.36;
+    document.write('Number: ', num, ' Type: ', typeof num, '<br>');
+    let convert = num.toString();
+    document.write('Convert: ', convert, ' Type: ', typeof convert, '<br>');
+    document.write('Result: ', Math.floor(num), Math.ceil(num), '<br>');
+    document.write('<hr>')
+
+
+
+    // document.write('<h2>TASK 15</h2>')
+
+
+
+    // document.write('<hr>')
+
+    document.write('<h2>TASK 16</h2>')
+    var university = 'University of Karachi';
+    document.write('String: ', university, '<br>');
+    for (let i = 0; i < university.length; i++) {
+      // document.write(university[i],'<br>');
+      console.log(university[i]);
+    }
+    document.write('Please console it')
+    document.write('<hr>')
+
+    document.write('<h2>TASK 17</h2>')
+    var input = 'Pakistan';
+    document.write('String: ', input, '<br>');
+    document.write('Last character of input: ', input.charAt(7), '<br>');
+    document.write('<hr>')
+
+    document.write('<h2>TASK 18</h2>')
+    var text = 'The quick brown fox jumps over the lazy dog';
+    var count = (text.match(/the/gi)).length;
+    document.write('Text: ', text, '<br>');
+    document.write('There are ', count, ' occurrence(s) of word "the"');
+    document.write('<hr>')
+  </script>
+</body>
+
+</html>
